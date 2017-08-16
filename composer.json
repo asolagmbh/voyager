@@ -42,5 +42,13 @@
             "TCG\\Voyager\\Tests\\": "tests/"
       }
     },
+    
+     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/asolagmbh/voyager.git"           
+        }
+    ],
+    
     "minimum-stability": "stable"
 }
