@@ -1,21 +1,21 @@
 <?php
 
-namespace TCG\Voyager\Http\Controllers;
+namespace Asolagmbh\Voyager\Http\Controllers;
 
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-use TCG\Voyager\Database\DatabaseUpdater;
-use TCG\Voyager\Database\Schema\Column;
-use TCG\Voyager\Database\Schema\Identifier;
-use TCG\Voyager\Database\Schema\SchemaManager;
-use TCG\Voyager\Database\Schema\Table;
-use TCG\Voyager\Database\Types\Type;
-use TCG\Voyager\Facades\Voyager;
-use TCG\Voyager\Models\DataType;
-use TCG\Voyager\Models\Permission;
+use Asolagmbh\Voyager\Database\DatabaseUpdater;
+use Asolagmbh\Voyager\Database\Schema\Column;
+use Asolagmbh\Voyager\Database\Schema\Identifier;
+use Asolagmbh\Voyager\Database\Schema\SchemaManager;
+use Asolagmbh\Voyager\Database\Schema\Table;
+use Asolagmbh\Voyager\Database\Types\Type;
+use Asolagmbh\Voyager\Facades\Voyager;
+use Asolagmbh\Voyager\Models\DataType;
+use Asolagmbh\Voyager\Models\Permission;
 
 class VoyagerDatabaseController extends Controller
 {
@@ -294,7 +294,7 @@ class VoyagerDatabaseController extends Controller
     {
         Voyager::canOrFail('browse_database');
 
-        /* @var \TCG\Voyager\Models\DataType $dataType */
+        /* @var \Asolagmbh\Voyager\Models\DataType $dataType */
         try {
             $dataType = Voyager::model('DataType')->find($id);
 
@@ -320,7 +320,7 @@ class VoyagerDatabaseController extends Controller
     {
         Voyager::canOrFail('browse_database');
 
-        /* @var \TCG\Voyager\Models\DataType $dataType */
+        /* @var \Asolagmbh\Voyager\Models\DataType $dataType */
         $dataType = Voyager::model('DataType')->find($id);
 
         // Delete Translations, if present

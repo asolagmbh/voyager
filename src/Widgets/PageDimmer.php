@@ -1,9 +1,9 @@
 <?php
 
-namespace TCG\Voyager\Widgets;
+namespace Asolagmbh\Voyager\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
-use TCG\Voyager\Facades\Voyager;
+use Asolagmbh\Voyager\Facades\Voyager;
 
 class PageDimmer extends AbstractWidget
 {

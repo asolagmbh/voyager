@@ -1,11 +1,11 @@
 <?php
 
-namespace TCG\Voyager\Http\Controllers;
+namespace Asolagmbh\Voyager\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use TCG\Voyager\Facades\Voyager;
-use TCG\Voyager\Http\Controllers\Traits\BreadRelationshipParser;
+use Asolagmbh\Voyager\Facades\Voyager;
+use Asolagmbh\Voyager\Http\Controllers\Traits\BreadRelationshipParser;
 
 class VoyagerBreadController extends Controller
 {

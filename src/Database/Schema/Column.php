@@ -1,10 +1,10 @@
 <?php
 
-namespace TCG\Voyager\Database\Schema;
+namespace Asolagmbh\Voyager\Database\Schema;
 
 use Doctrine\DBAL\Schema\Column as DoctrineColumn;
 use Doctrine\DBAL\Types\Type as DoctrineType;
-use TCG\Voyager\Database\Types\Type;
+use Asolagmbh\Voyager\Database\Types\Type;
 
 abstract class Column
 {

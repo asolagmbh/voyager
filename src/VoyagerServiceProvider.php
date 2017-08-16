@@ -1,6 +1,6 @@
 <?php
 
-namespace TCG\Voyager;
+namespace Asolagmbh\Voyager;
 
 use Arrilot\Widgets\Facade as Widget;
 use Arrilot\Widgets\ServiceProvider as WidgetServiceProvider;
@@ -11,11 +11,11 @@ use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Intervention\Image\ImageServiceProvider;
-use TCG\Voyager\Facades\Voyager as VoyagerFacade;
-use TCG\Voyager\FormFields\After\DescriptionHandler;
-use TCG\Voyager\Http\Middleware\VoyagerAdminMiddleware;
-use TCG\Voyager\Models\User;
-use TCG\Voyager\Translator\Collection as TranslatorCollection;
+use Asolagmbh\Voyager\Facades\Voyager as VoyagerFacade;
+use Asolagmbh\Voyager\FormFields\After\DescriptionHandler;
+use Asolagmbh\Voyager\Http\Middleware\VoyagerAdminMiddleware;
+use Asolagmbh\Voyager\Models\User;
+use Asolagmbh\Voyager\Translator\Collection as TranslatorCollection;
 
 class VoyagerServiceProvider extends ServiceProvider
 {
@@ -165,7 +165,7 @@ class VoyagerServiceProvider extends ServiceProvider
         $components = ['title', 'text', 'button'];
 
         foreach ($components as $component) {
-            $class = 'TCG\\Voyager\\Alert\\Components\\'.ucfirst(camel_case($component)).'Component';
+            $class = 'Asolagmbh\\Voyager\\Alert\\Components\\'.ucfirst(camel_case($component)).'Component';
 
             $this->app->bind("voyager.alert.components.{$component}", $class);
         }
@@ -189,7 +189,7 @@ class VoyagerServiceProvider extends ServiceProvider
      */
     protected function registerWidgets()
     {
-        $default_widgets = ['TCG\\Voyager\\Widgets\\UserDimmer', 'TCG\\Voyager\\Widgets\\PostDimmer', 'TCG\\Voyager\\Widgets\\PageDimmer'];
+        $default_widgets = ['Asolagmbh\\Voyager\\Widgets\\UserDimmer', 'Asolagmbh\\Voyager\\Widgets\\PostDimmer', 'Asolagmbh\\Voyager\\Widgets\\PageDimmer'];
         $widgets = config('voyager.dashboard.widgets', $default_widgets);
 
         foreach ($widgets as $widget) {
@@ -263,7 +263,7 @@ class VoyagerServiceProvider extends ServiceProvider
         foreach ($formFields as $formField) {
             $class = studly_case("{$formField}_handler");
 
-            VoyagerFacade::addFormField("TCG\\Voyager\\FormFields\\{$class}");
+            VoyagerFacade::addFormField("Asolagmbh\\Voyager\\FormFields\\{$class}");
         }
 
         VoyagerFacade::addAfterFormField(DescriptionHandler::class);

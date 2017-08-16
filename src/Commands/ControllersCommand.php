@@ -1,6 +1,6 @@
 <?php
 
-namespace TCG\Voyager\Commands;
+namespace Asolagmbh\Voyager\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
@@ -57,7 +57,7 @@ class ControllersCommand extends Command
     {
         $stub = $this->getStub();
         $files = $this->filesystem->files(base_path('vendor/tcg/voyager/src/Http/Controllers'));
-        $namespace = config('voyager.controllers.namespace', 'TCG\\Voyager\\Http\\Controllers');
+        $namespace = config('voyager.controllers.namespace', 'Asolagmbh\\Voyager\\Http\\Controllers');
 
         $appNamespace = app()->getNamespace();
 
@@ -111,7 +111,7 @@ class ControllersCommand extends Command
      */
     protected function generateContent($stub, $class)
     {
-        $namespace = config('voyager.controllers.namespace', 'TCG\\Voyager\\Http\\Controllers');
+        $namespace = config('voyager.controllers.namespace', 'Asolagmbh\\Voyager\\Http\\Controllers');
 
         $content = str_replace(
             'DummyNamespace',
@@ -121,7 +121,7 @@ class ControllersCommand extends Command
 
         $content = str_replace(
             'FullBaseDummyClass',
-            'TCG\\Voyager\\Http\\Controllers\\'.$class,
+            'Asolagmbh\\Voyager\\Http\\Controllers\\'.$class,
             $content
         );
 

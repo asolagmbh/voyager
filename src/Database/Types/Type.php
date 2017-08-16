@@ -1,11 +1,11 @@
 <?php
 
-namespace TCG\Voyager\Database\Types;
+namespace Asolagmbh\Voyager\Database\Types;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform as DoctrineAbstractPlatform;
 use Doctrine\DBAL\Types\Type as DoctrineType;
-use TCG\Voyager\Database\Platforms\Platform;
-use TCG\Voyager\Database\Schema\SchemaManager;
+use Asolagmbh\Voyager\Database\Platforms\Platform;
+use Asolagmbh\Voyager\Database\Schema\SchemaManager;
 
 abstract class Type extends DoctrineType
 {

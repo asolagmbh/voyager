@@ -1,8 +1,8 @@
 <?php
 
-namespace TCG\Voyager\FormFields\After;
+namespace Asolagmbh\Voyager\FormFields\After;
 
-use TCG\Voyager\Traits\Renderable;
+use Asolagmbh\Voyager\Traits\Renderable;
 
 abstract class AbstractHandler implements HandlerInterface
 {

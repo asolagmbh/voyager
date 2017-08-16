@@ -1,26 +1,26 @@
 <?php
 
-namespace TCG\Voyager;
+namespace Asolagmbh\Voyager;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
-use TCG\Voyager\FormFields\After\HandlerInterface as AfterHandlerInterface;
-use TCG\Voyager\FormFields\HandlerInterface;
-use TCG\Voyager\Models\Category;
-use TCG\Voyager\Models\DataRow;
-use TCG\Voyager\Models\DataType;
-use TCG\Voyager\Models\Menu;
-use TCG\Voyager\Models\MenuItem;
-use TCG\Voyager\Models\Page;
-use TCG\Voyager\Models\Permission;
-use TCG\Voyager\Models\Post;
-use TCG\Voyager\Models\Role;
-use TCG\Voyager\Models\Setting;
-use TCG\Voyager\Models\User;
-use TCG\Voyager\Traits\Translatable;
+use Asolagmbh\Voyager\FormFields\After\HandlerInterface as AfterHandlerInterface;
+use Asolagmbh\Voyager\FormFields\HandlerInterface;
+use Asolagmbh\Voyager\Models\Category;
+use Asolagmbh\Voyager\Models\DataRow;
+use Asolagmbh\Voyager\Models\DataType;
+use Asolagmbh\Voyager\Models\Menu;
+use Asolagmbh\Voyager\Models\MenuItem;
+use Asolagmbh\Voyager\Models\Page;
+use Asolagmbh\Voyager\Models\Permission;
+use Asolagmbh\Voyager\Models\Post;
+use Asolagmbh\Voyager\Models\Role;
+use Asolagmbh\Voyager\Models\Setting;
+use Asolagmbh\Voyager\Models\User;
+use Asolagmbh\Voyager\Traits\Translatable;
 
 class Voyager
 {
