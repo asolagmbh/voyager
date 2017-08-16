@@ -1,5 +1,5 @@
 {
-    "name": "tcg/voyager",
+    "name": "asolagmbh/voyager",
     "description": "A Laravel Admin Package for The Control Group to make your life easier and steer your project in the right direction",
     "keywords": ["laravel", "admin", "panel"],
     "license": "MIT",
@@ -42,13 +42,6 @@
             "TCG\\Voyager\\Tests\\": "tests/"
       }
     },
-    
-     "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/asolagmbh/voyager.git"           
-        }
-    ],
     
     "minimum-stability": "stable"
 }
