@@ -27,7 +27,7 @@ return [
     */
 
     'controllers' => [
-        'namespace' => 'TCG\\Voyager\\Http\\Controllers',
+        'namespace' => 'Asolagmbh\\Voyager\\Http\\Controllers',
     ],
 
     /*
@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'assets_path' => '/vendor/tcg/voyager/assets',
+    'assets_path' => '/vendor/asolagmbh/voyager/assets',
 
     /*
     |--------------------------------------------------------------------------
@@ -138,21 +138,21 @@ return [
         [
             'name'  => 'User',
             'icon'  => 'voyager-group',
-            'model' => TCG\Voyager\Models\User::class,
+            'model' => Asolagmbh\Voyager\Models\User::class,
             'url'   => 'admin/users',
             'image' => '/images/widget-backgrounds/02.png',
         ],
         [
             'name'  => 'Post',
             'icon'  => 'voyager-news',
-            'model' => TCG\Voyager\Models\Post::class,
+            'model' => Asolagmbh\Voyager\Models\Post::class,
             'url'   => 'admin/posts',
             'image' => '/images/widget-backgrounds/03.png',
         ],
         [
             'name'  => 'Page',
             'icon'  => 'voyager-file-text',
-            'model' => TCG\Voyager\Models\Page::class,
+            'model' => Asolagmbh\Voyager\Models\Page::class,
             'url'   => 'admin/pages',
             'image' => '/images/widget-backgrounds/04.png',
         ],
@@ -191,9 +191,9 @@ return [
         ],
 
         'widgets' => [
-            'TCG\\Voyager\\Widgets\\UserDimmer',
-            'TCG\\Voyager\\Widgets\\PostDimmer',
-            'TCG\\Voyager\\Widgets\\PageDimmer',
+            'Asolagmbh\\Voyager\\Widgets\\UserDimmer',
+            'Asolagmbh\\Voyager\\Widgets\\PostDimmer',
+            'Asolagmbh\\Voyager\\Widgets\\PageDimmer',
         ],
 
     ],
